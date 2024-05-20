@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+            <!--  M O B I L E   H E A D E R  -->
+
+
+            <div id="mobile-Open-Header" class="container"> 
+                <div id="header-mobile">
+                    <div id="logo-mobile">
+                        <a href="index.htm"><img  src="img/sierra-webapp-dark.svg"  width="120px" height="60px"  alt=" Sierra Logo"></a>
+                    </div>
+                    <div>
+                        
+                        <div onclick="closeHeader()"><i  id="mark" class="fa-solid fa-xmark"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <div class="container">
+                    <div id="mobile-header">
+                        <ul>
+                            <li><a href="">Solutions</a><div class="line"></div></li>
+                            <li><a href="">Pricing</a><div class="line"></div></li>
+                            <li><a href="">Help</a><div class="line"></div></li>
+                            <li><a href="">Contact</a><div class="line"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+    <div id="page">
+        <header>
+            <div class="container">
+                <div id="img-header">
+                    <div id="img-logo">
+                        <a href="index.htm">
+                            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 993 240" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.0351 117.432C84.5515 108.867 116.55 151.28 121.963 189.308C127.855 231.104 111.548 250.015 72.6981 232.543C29.8742 213.22 0 170.123 0 120.036C0 67.2083 33.2316 22.0545 79.961 4.51386C112.507 -7.7509 123.47 5.54168 105.724 37.5397C90.924 64.1932 57.076 97.5619 20.967 117.501L21.0351 117.432Z" fill="#824DEB"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M225.829 122.568C162.313 131.133 130.315 88.7204 124.902 50.6928C119.01 8.89674 135.317 -10.0143 174.167 7.45788C216.991 26.78 246.864 69.8778 246.864 119.965C246.864 172.861 213.633 217.945 166.904 235.486C134.358 247.751 123.395 234.458 141.141 202.46C155.941 175.807 189.789 142.439 225.898 122.5L225.829 122.568Z" fill="#824DEB"></path><path d="M416.435 71.4723C415.725 64.3108 412.677 58.7474 407.291 54.782C401.905 50.8165 394.596 48.8338 385.363 48.8338C379.089 48.8338 373.792 49.7216 369.472 51.4972C365.151 53.2135 361.837 55.6106 359.528 58.6882C357.279 61.7659 356.155 65.2578 356.155 69.1641C356.036 72.4193 356.717 75.2602 358.197 77.6868C359.736 80.1134 361.837 82.2145 364.5 83.9901C367.163 85.7064 370.241 87.2157 373.733 88.5178C377.225 89.7607 380.954 90.826 384.919 91.7138L401.254 95.62C409.185 97.3956 416.465 99.763 423.094 102.722C429.723 105.682 435.464 109.321 440.317 113.642C445.17 117.963 448.928 123.053 451.592 128.912C454.314 134.771 455.705 141.489 455.764 149.065C455.705 160.192 452.864 169.839 447.241 178.006C441.678 186.115 433.629 192.418 423.094 196.916C412.618 201.355 399.982 203.575 385.185 203.575C370.507 203.575 357.723 201.326 346.833 196.827C336.002 192.329 327.539 185.671 321.442 176.852C315.406 167.974 312.239 156.996 311.943 143.915H349.141C349.556 150.012 351.302 155.102 354.379 159.185C357.516 163.21 361.689 166.258 366.897 168.33C372.165 170.342 378.113 171.348 384.741 171.348C391.252 171.348 396.904 170.401 401.698 168.507C406.551 166.613 410.31 163.979 412.973 160.606C415.636 157.232 416.968 153.356 416.968 148.976C416.968 144.892 415.755 141.459 413.328 138.678C410.961 135.896 407.469 133.528 402.852 131.575C398.295 129.622 392.702 127.847 386.073 126.249L366.276 121.277C350.947 117.548 338.843 111.719 329.965 103.788C321.087 95.8568 316.678 85.1738 316.737 71.7386C316.678 60.7301 319.608 51.1124 325.526 42.8857C331.504 34.6589 339.701 28.2372 350.118 23.6207C360.535 19.0043 372.372 16.696 385.629 16.696C399.124 16.696 410.902 19.0043 420.963 23.6207C431.084 28.2372 438.955 34.6589 444.578 42.8857C450.201 51.1124 453.101 60.6413 453.278 71.4723H416.435Z" fill="white"></path><path d="M475.911 201V64.6364H513.73V201H475.911ZM494.909 47.0582C489.287 47.0582 484.463 45.1939 480.438 41.4652C476.473 37.6773 474.49 33.1496 474.49 27.8821C474.49 22.6738 476.473 18.2053 480.438 14.4766C484.463 10.6887 489.287 8.79473 494.909 8.79473C500.532 8.79473 505.326 10.6887 509.291 14.4766C513.316 18.2053 515.328 22.6738 515.328 27.8821C515.328 33.1496 513.316 37.6773 509.291 41.4652C505.326 45.1939 500.532 47.0582 494.909 47.0582Z" fill="white"></path><path d="M601.171 203.663C587.144 203.663 575.07 200.822 564.949 195.141C554.888 189.4 547.134 181.291 541.689 170.815C536.244 160.28 533.522 147.822 533.522 133.44C533.522 119.413 536.244 107.102 541.689 96.5078C547.134 85.9136 554.799 77.6572 564.683 71.7386C574.626 65.8201 586.286 62.8608 599.662 62.8608C608.658 62.8608 617.033 64.3108 624.786 67.2109C632.598 70.0518 639.405 74.3428 645.205 80.0838C651.064 85.8248 655.622 93.0455 658.877 101.746C662.132 110.387 663.76 120.508 663.76 132.108V142.495L570.897 142.584L570.933 119.058H628.159C628.159 113.612 626.976 108.789 624.608 104.587C622.241 100.384 618.956 97.0997 614.754 94.7322C610.611 92.3056 605.787 91.0923 600.283 91.0923C594.542 91.0923 589.452 92.424 585.013 95.0873C580.633 97.6915 577.201 101.213 574.715 105.652C572.229 110.032 570.957 114.915 570.897 120.3V142.584C570.897 149.331 572.14 155.161 574.626 160.073C577.171 164.986 580.752 168.773 585.368 171.437C589.985 174.1 595.459 175.432 601.792 175.432C605.994 175.432 609.841 174.84 613.333 173.656C616.825 172.473 619.814 170.697 622.3 168.33C624.786 165.962 626.68 163.062 627.982 159.629L662.961 161.938C661.185 170.342 657.545 177.681 652.041 183.955C646.596 190.169 639.553 195.022 630.912 198.514C622.33 201.947 612.416 203.663 601.171 203.663Z" fill="white"></path><path d="M683.44 201V64.6364H720.105V88.429H721.526C724.012 79.9654 728.184 73.5734 734.044 69.2528C739.903 64.8731 746.65 62.6832 754.285 62.6832C756.179 62.6832 758.221 62.8016 760.411 63.0383C762.601 63.2751 764.524 63.6006 766.181 64.0149V97.5732C764.406 97.0405 761.95 96.567 758.813 96.1527C755.676 95.7384 752.806 95.5312 750.201 95.5312C744.638 95.5312 739.666 96.7446 735.287 99.1712C730.966 101.539 727.533 104.853 724.988 109.114C722.502 113.376 721.26 118.288 721.26 123.852V201H683.44Z" fill="white"></path><path d="M780.735 201V64.6364H817.4V88.429H818.821C821.307 79.9654 825.479 73.5734 831.339 69.2528C837.198 64.8731 843.945 62.6832 851.58 62.6832C853.474 62.6832 855.516 62.8016 857.706 63.0383C859.896 63.2751 861.819 63.6006 863.476 64.0149V97.5732C861.701 97.0405 859.245 96.567 856.108 96.1527C852.971 95.7384 850.1 95.5312 847.496 95.5312C841.933 95.5312 836.961 96.7446 832.581 99.1712C828.261 101.539 824.828 104.853 822.283 109.114C819.797 113.376 818.555 118.288 818.555 123.852V201H780.735Z" fill="white"></path><path d="M915.509 203.575C906.808 203.575 899.055 202.065 892.249 199.047C885.442 195.969 880.056 191.442 876.091 185.464C872.185 179.427 870.232 171.91 870.232 162.914C870.232 155.338 871.622 148.976 874.404 143.827C877.186 138.678 880.974 134.535 885.768 131.398C890.562 128.261 896.007 125.893 902.103 124.295C908.258 122.697 914.71 121.573 921.457 120.922C929.388 120.093 935.78 119.324 940.633 118.614C945.486 117.844 949.008 116.72 951.197 115.24C953.387 113.76 954.482 111.571 954.482 108.67V108.138C954.482 102.515 952.707 98.165 949.156 95.0873C945.664 92.0097 940.692 90.4709 934.241 90.4709C927.434 90.4709 922.019 91.9801 917.994 94.9986C913.97 97.9579 911.306 101.687 910.004 106.185L875.026 103.344C876.801 95.0578 880.293 87.8963 885.501 81.8594C890.71 75.7633 897.427 71.0876 905.654 67.8324C913.94 64.518 923.528 62.8608 934.418 62.8608C941.994 62.8608 949.244 63.7486 956.169 65.5241C963.153 67.2997 969.338 70.0518 974.724 73.7805C980.169 77.5092 984.46 82.3033 987.597 88.1626C990.733 93.9628 992.302 100.917 992.302 109.026V201H956.435V182.09H955.37C953.18 186.352 950.25 190.11 946.581 193.365C942.911 196.561 938.502 199.076 933.353 200.911C928.204 202.687 922.256 203.575 915.509 203.575ZM926.339 177.474C931.903 177.474 936.815 176.379 941.077 174.189C945.338 171.94 948.682 168.921 951.109 165.134C953.535 161.346 954.749 157.055 954.749 152.261V137.79C953.565 138.559 951.937 139.269 949.866 139.92C947.853 140.512 945.575 141.075 943.03 141.607C940.485 142.081 937.94 142.525 935.395 142.939C932.85 143.294 930.542 143.62 928.47 143.915C924.031 144.567 920.155 145.602 916.84 147.023C913.526 148.443 910.951 150.367 909.116 152.793C907.282 155.161 906.364 158.12 906.364 161.671C906.364 166.82 908.229 170.756 911.957 173.479C915.745 176.142 920.539 177.474 926.339 177.474Z" fill="white"></path></svg>
+                            </a>
+                            <a href="index.htm">
+                                <img  class="none logo" width="120px" height="60px" src="img/sierra-webapp-dark (1).svg" alt="logo">
+                            </a>
+                    </div>
+                    <div onclick="openHeader()" id="burger"><i id="bars" class="fa-solid fa-bars"></i></div>
+                </div>
+            
+            <div id="menu">
+                <ul >
+                    <li><a href="">Solutions</a><div class="line"></div></li>
+                    <li><a href="">Pricing</a><div class="line"></div></li>
+                    <li><a href="">Help</a><div class="line"></div></li>
+                    <li><a href="">Contact</a><div class="line"></div></li>
+                </ul>
+            </div>
+            <div id="header-button">
+                <button class="custom-btn btn-3"><span>Get started</span></button>
+                
+            </div>
+            </div>
+        </header>
+        
+
+        <div class="container">
+            <div id="text">
+                <p id="text-first">Built for global customers</p>
+                <h1>The easy way to <span data-aos="fade-right" data-aos-delay="300" id="manage">manage</span> <br /><span id="interval"></span></h1>
+                <p>Accelerate your business with our solutions. Harness cutting-edge technology, and a team to drive growth.</p>
+                <div id="header-regs">
+                    <input type="text" placeholder="Email">
+                    <button>Try for free</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div data-aos="fade-down" data-aos-duration="400"  id="costumers-img-mobile">
+                <img src="img/webapp-mockup-2.png" alt="Costumers">
+            </div>
+        </div>
+    </div>
+    
+        <div data-aos="fade-down" data-aos-duration="400"  id="costumers-img" class="container">
+            <div >
+                <img  src="img/webapp-mockup-2.png" alt="Costumers">
+            </div>
+        </div>
+        <main id="main">
+        <div class="container">
+            <div id="platform">
+                <h6 class="sections-h6">eCommerce Analytics</h6>
+                <h2 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">A powerful <span>easy-to-use</span> platform</h2>
+                <p>Discover the core pillars of our platform – quality Scores, expert software support, and tailored management assistance.</p>
+            </div>
+            <div id="platform-cards">
+                <div data-aos="fade-up" data-aos-duration="300" class="platform-cards-first">
+                    <div class="icon"><i class="fa-regular fa-clock"></i></div>
+                <div class="box-body">
+                    <h5>Quality  scores</h5>
+                    <p>Keep your strategic goals and planning in one place to improve employee engagement.</p>
+                </div>
+                </div>
+                <div data-aos="fade-up"data-aos-duration="400" class="platform-cards-first">
+                    <div class="icon"><i class="fa-solid fa-users"></i></div>
+                <div class="box-body">
+                    <h5>Quality scores</h5>
+                    <p>Define each stage of work to see what’s important and where things are getting stuck.</p>
+                </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="500" class="platform-cards-first">
+                    <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="box-body">
+                    <h5>Management help</h5>
+                    <p>From the small stuff to the big picture, we organize work so teams know what to do.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  S E C T I O N   3 -->
+
+        <div id="section-3">
+        <div class="container">
+                <div class="section-3-place">
+                    <div class="section-3-text">
+                        <h6>Improve Conversions</h6>
+                        <h2><span>Boost</span> conversions, uncover opportunities</h2>
+                        <p>Identify bottlenecks in your conversion funnels with precision. Our app analyzes every step, empowering you to optimize the customer journey and maximize sales effortlessly.</p>
+                    </div>
+                    <div data-aos="zoom-in" class="section-3-button"><button class="discover-btn"><span class="span1">Discover more</span><span class="span2">Discover more</span></button></div>
+                </div>
+                <div class="section-3-img">
+                    <img  id="second-img-first" src="img/webapp-2.png" alt="webapp">
+                    <img  id="second-img" src="img/webapp-1.png" alt="webapp">
+                </div>
+            </div>
+        <div  id="container-2">
+                <div class="section-3-place">
+                    <div class="section-3-text">
+                        <h6>Best Results</h6>
+                        <h2><span>Optimize</span> page layouts and refine your content</h2>
+                        <p>Enhance your website's effectiveness. Tailor page layouts and refine content based on real data. Elevate user engagement, improve retention, and increase your revenue potential.</p>
+                    </div>
+                    <div data-aos="zoom-in" class="section-3-button"><button class="discover-btn"><span class="span1">Discover more</span><span class="span2">Discover more</span></button></div>
+                </div>
+                <div class="section-3-img">
+                    <img id="second-img-third" src="img/webapp-3.png" alt="webapp">
+                    <img id="second-img-four" src="img/webapp-4.png" alt="webapp">
+                </div>
+            </div>
+        </div>
+
+        <div id="section-4">
+            <div class="container">
+                <div id="section-4-main">
+                    <div id="section-4-text">
+                        <h6>How it works</h6>
+                        <h2>Our <span>step-by-step</span> approach</h2>
+                        <p>With concepts in hand, we meticulously design, refining every detail to align with your vision and objectives.</p>
+                    </div>
+                    <div id="section-4-plan">
+                        <div data-aos="fade-up" data-aos-duration="100" class="width-4" id="pick">
+                            <h4>Implement changes<span>step1</span></h4>
+                            <p>Go through each of your options, taking note of which check the boxes of your needs.</p>
+                        </div>
+                        <div data-aos="fade-right" data-aos-duration="200" class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div data-aos="fade-up" data-aos-duration="110" class="width-4" id="implement">
+                            <h4>Monitor progress<span>step2</span></h4>
+                            <p>Identify areas for improvement using our detailed insights. Refine your content with ease.</p>
+                        </div>
+                        <div data-aos="fade-right" data-aos-duration="200" class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div data-aos="fade-up" data-aos-duration="120" class="width-4" id="monitor">
+                            <h4>Pick a plan <span>step3 </span></h4>
+                            <p>Our real-time updates and alerts keep you informed. Watch your ecommerce venture thrive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-4-second-main">
+                    <div id="section-4-second-plan">
+                        <div id="section-4-second-plan-first">
+                            <div data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">
+                                <h6>Ready Templates</h6>
+                                <h2>Essentials to power your website creation</h2>
+                                <p>Getting started is a breeze, regardless of your level of experience. Let us automate your tasks.</p>
+                            </div>
+                            <div data-aos="zoom-in" class="section-3-button"><button class="discover-btn getButton"><span class="span1">Get sarted</span><span class="span2">Get started</span></button></div>
+                            <div id="check-section">
+                                <ul>
+                                    <li><i class="fa-regular fa-circle-check"></i> Flexible solutions</li>
+                                    <li><i class="fa-regular fa-circle-check"></i> Constant updates</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div  id="section-4-second-plan-img">
+                        <img  data-aos="fade-up" src="img/web-app-clients.jpg" alt="clients">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section-5">
+            <div class="container">
+                <div id="section-5-text">
+                    <h6 class="sections-h6">Flexible Pricing</h6>
+                    <h2>Flexible plans, unmatched value</h2>
+                    <p>Whether you're an individual, a small team, or a growing enterprise, we have a plan that aligns perfectly with your goals.</p>
+                </div>
+                <div id="manual-choose">
+                    <ul>
+                        <li><span class="col" id="month">Monthly</span></li>
+                        <li><div  onclick="Manual()" id="square"><i  id="circle" class="fa-solid  fa-circle"></i></div></li>
+                        <li><span id="anually">Anually</span></li>
+                    </ul>
+                </div>
+                <div id="section-5-plan">
+                    <div class="section-5-plan-cards">
+                        <div class="cards-text-change"><h2><sup>$ </sup><span  class="money">29<span id="firstSubMoney"></span></span><span id="firstSubTime" class="time"> / month</span></h2></div>
+                        <div class="cards-text"> 
+                            <h4>Standart</h4>
+                            <p>For individuals and small teams trying out for an unlimited period.</p>
+                        </div>
+                        <div class="cards-checkbox">
+                            <ul>
+                                <li><i class="fa-regular fa-square-check"></i> Sell on your own terms</li>
+                                <li><i class="fa-regular fa-square-check"></i> Robust integrations</li>
+                                <li><i class="fa-regular fa-square-check"></i> Live streaming</li>
+                                <li><i class="fa-regular fa-square-check"></i> Marketing tools</li>
+                                <li><i class="fa-regular fa-square-check"></i> Automations</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="cards-button"><button class="discover-btn plan-button"><span class="span1">Discover more</span><span class="span2">Discover more</span></button></div>
+                            
+                        </div>
+                    <div id="middle-section" class="section-5-plan-cards">
+                        <div class="cards-text-change"><h2><sup>$ </sup><span  class="money">49<span id="secondSubMoney"></span></span><span id="secondSubTime" class="time"> / month</span></h2></div>
+                        <div class="cards-text"> 
+                            <h4>Professional</h4>
+                            <p>For individual account executives who want increased productivity.</p>
+                        </div>
+                        <div class="cards-checkbox">
+                            <ul>
+                                <li><i class="fa-regular fa-square-check"></i> Everything in Standard</li>
+                                <li><i class="fa-regular fa-square-check"></i> Unlimited bandwidth</li>
+                                <li><i class="fa-regular fa-square-check"></i> Robust integrations</li>
+                                <li><i class="fa-regular fa-square-check"></i> Live streaming</li>
+                                <li><i class="fa-regular fa-square-check"></i> Marketing tools</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="cards-button"><button class="discover-btn plan-button"><span class="span1">Discover more</span><span class="span2">Discover more</span></button></div>
+                            
+                        </div>
+                    <div class="section-5-plan-cards">
+                        <div class="cards-text-change"><h2><sup>$ </sup><span  class="money">99<span id="thirdSubMoney"></span></span><span id="thirdSubTime" class="time"> / month</span></h2></div>
+                        <div class="cards-text"> 
+                            <h4>Enterprise</h4>
+                            <p>For medium and large sales organizations with advanced needs.</p>
+                        </div>
+                        <div class="cards-checkbox">
+                            <ul>
+                                <li><i class="fa-regular fa-square-check"></i> Everything in Professional</li>
+                                <li><i class="fa-regular fa-square-check"></i> Robust integrations</li>
+                                <li><i class="fa-regular fa-square-check"></i> Live streaming</li>
+                                <li><i class="fa-regular fa-square-check"></i> Marketing tools</li>
+                                <li><i class="fa-regular fa-square-check"></i> Automations</li>
+                            </ul>
+                        </div>
+                        <div class="cards-button"><button class="discover-btn plan-button"><span class="span1">Discover more</span><span class="span2">Discover more</span></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section-6">
+                <div class="container">
+                    <div id="section-6-text">
+                        <h6 class="sections-h6">Costumer Testimonials</h6>
+                        <h2>We love <span>our users</span> and they love us</h2>
+                        <p>The best way to showcase our commitment is through the experiences and stories of those who have partnered with us.</p>
+                    </div>
+                    <div  id="section-6-cards">
+                        <div data-aos="fade-up" data-aos-duration="100" class="cards-users">
+                            <p>I just had to take a moment to express my gratitude for the outstanding service they provided. Their complete assistance and efforts were truly remarkable.</p>
+                            <div class="users-inf">
+                                <div class="inf-text">
+                                    <h4>Frederic Hill</h4>
+                                    <p>Founder & CEO</p>
+                                </div>
+                                <div class="inf-img">
+                                    <img src="img/review2.jpg" alt="users">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="200" class="cards-users transparent">
+                            <p>Every step of the way they provided helpful advice, recommended strategies to ensure our website was optimally set up.</p>
+                            <div class="users-inf">
+                                <div class="inf-text">
+                                    <h4>Julie Kyle</h4>
+                                    <p>Account Executive</p>
+                                </div>
+                                <div class="inf-img">
+                                    <img src="img/review1.jpg" alt="users">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="300" class="cards-users">
+                            <p>Excellent service and throughly trained professionals, and their follow-up on tickets was handled with such care and attention to detail.</p>
+                            <div class="users-inf">
+                                <div class="inf-text">
+                                    <h4>Brendan Buck</h4>
+                                    <p>Data Engineer</p>
+                                </div>
+                                <div class="inf-img">
+                                    <img src="img/review4 (1).jpg" alt="users">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="400" class="cards-users transparent">
+                            <p>Every step of the way they provided helpful advice, recommended strategies to ensure our website was optimally set up.</p>
+                            <div class="users-inf">
+                                <div class="inf-text">
+                                    <h4>Julie Kyle</h4>
+                                    <p>Account Executive</p>
+                                </div>
+                                <div class="inf-img">
+                                    <img src="img/review1.jpg" alt="users">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="500" class="cards-users">
+                            <p>Excellent service and throughly trained professionals, and their follow-up on tickets was handled with such care and attention to detail.</p>
+                            <div class="users-inf">
+                                <div class="inf-text">
+                                    <h4>Paige Lowery</h4>
+                                    <p>Marketing Manager</p>
+                                </div>
+                                <div class="inf-img">
+                                    <img src="img/review4 (1).jpg" alt="users">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="600" class="cards-users transparent">
+                            <p>I just had to take a moment to express my gratitude for the outstanding service they provided. Their complete assistance and efforts were truly remarkable.</p>
+                            <div class="users-inf">
+                                <div class="inf-text">
+                                    <h4>Stefan Ball</h4>
+                                    <p>Head of Brand</p>
+                                </div>
+                                <div class="inf-img">
+                                    <img src="img/review2.jpg" alt="users">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                <div id="single-section">
+                        <div id="single-text">
+                            <h6  class="sections-h6 single-h6">eCommerce Success</h6>
+                            <h2>A single, powerful, easy-to-use platform</h2>
+                            <p>Dive into the world of data-driven growth. Get started today and watch your online business thrive.</p>
+                            <div data-aos="zoom-in" class="section-3-button"><button  class="discover-btn getButton"><span class="span1">Get sarted</span><span class="span2">Get started</span></button></div>
+                        </div>
+                        <div id="single-img">
+                            <div data-aos="fade-down" data-aos-duration="800" id="img-top">
+                                <img  src="img/web-app-clients.jpg" alt="">
+                            </div>
+                            <div id="img-bottom">
+                                <div data-aos="fade-up" data-aos-duration="700" id="img-bottom-first">
+                                    <img src="img/webapp-4.png" alt="">
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="900" id="img-bottom-second">
+                                    <img  src="img/webapp-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <div id="section-7">
+                    <div class="container">
+                        <div id="section-7-text">
+                            <h6  class="sections-h6 single-h6">Inoovate Brands</h6>
+                            <h2>We are <span>trusted by</span> brands across all industries</h2>
+                            <p>Dive into the world of data-driven growth. Get started today and watch your online business thrive.</p>
+                        </div>
+                        <div id="section-7-apps">
+                            <div class="apps">
+                                <img data-aos="zoom-in"  src="img/trustpilot.svg" alt="trust">
+                            </div>
+                            <div class="apps">
+                                <img data-aos="zoom-in"  src="img/spotify.svg" alt="trust">
+                            </div>
+                            <div class="apps">
+                                <img data-aos="zoom-in"  src="img/stripe.svg" alt="trust">
+                            </div>
+                            <div class="apps">
+                                <img data-aos="zoom-in"   src="img/google.svg" alt="trust">
+                            </div>
+                            <div class="apps">
+                                <img data-aos="zoom-in"  src="img/asana.svg" alt="trust">
+                            </div>
+                            <div class="apps">
+                                <img data-aos="zoom-in"  src="img/trustpilot.svg" alt="trust">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    
+    <footer>
+        <div id="footer-section-1">
+        <div class="container">
+                <div  id="footer-sierra">
+                    <img src="img/sierra-webapp-dark.svg" alt="sierra">
+                    <p>Our beautiful designs open the door to a realm of limitless possibilities, where imagination knows no bounds.</p>
+                </div>
+                <div class="footer-flex width" id="features">
+                    <h5>Features</h5>
+                    <ul>
+                        <li><a href="">Page builder</a><div class="line"></div></li>
+                        <li><a href="">Theme options</a><div class="line"></div></li>
+                        <li><a href="">Theme builder</a><div class="line"></div></li>
+                        <li><a href="">Template library</a><div class="line"></div></li>
+                    </ul>
+                </div>
+                <div class="footer-flex width" id="resources">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="">Support center</a><div class="line"></div></li>
+                        <li><a href="">Documentation</a><div class="line"></div></li>
+                        <li><a href="">Community</a><div class="line"></div></li>
+                        <li><a href="">Hosting</a><div class="line"></div></li>
+                    </ul>
+                </div>
+                <div class="footer-flex width" id="Follow-us">
+                    <h5>Follow us</h5>
+                    <ul>
+                        <li><a href="">Behance</a><div class="line"></div></li>
+                        <li><a href="">Dribbble</a><div class="line"></div></li>
+                        <li><a href="">Facebook</a><div class="line"></div></li>
+                        <li><a href="">Instagram</a><div class="line"></div></li>
+                    </ul>
+                </div>
+                <div class="footer-flex width" id="Get-in-touch">
+                    <h5>Get in touch</h5>
+                    <p>hello@company.com</p>
+                    <div id="a-socials">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-section-2">
+            <div class="container">
+                <div id="key-design">
+                    <p>© KeyDesign WordPress Theme. All Rights Reserved.</p>
+                </div>
+                <div id="terms">
+                    <ul>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
